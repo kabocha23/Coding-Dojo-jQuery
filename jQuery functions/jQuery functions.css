@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1000px;
+	background-color: steelblue;
+}
+#header {
+	width: 100%;
+	height: 75px;
+	margin: 20px 0px 0px 20px;
+}
+#main_content_container {
+	width: 90%;
+	margin: 0px 0px 0px 40px;
+	border-radius: 10px;
+	background-color: lightgrey;
+}
+h1 {
+	font-family: Comic Sans MS;
+}
+h2 {
+	font-family: Comic Sans MS;
+}
+h3 {
+	font-family: Comic Sans MS;
+}
+#test_list {
+	width: 30%;
+	margin:	10px 0px 0px 30px;
+	font-family: Comic Sans MS;
+	display: inline-block;
+	vertical-align: top;
+}
+ul {
+	margin: 10px 0px 10px 40px;
+}
+#test_buttons_container {
+	width: 60%;
+	margin: 30px 0px 0px 0px;
+	display: inline-block;
+}
+input {
+	height: 30px;
+	width: 130px;
+	margin: 10px 10px;
+	border-radius: 10px;
+	font-weight: bold;
+	font-family: Arial;
+}
+p {
+	font-family: Arial;
+	font-weight: bold;
+}
+.test_click_container {
+	width: 80%;
+	margin: 0px 0px 10px 40px;
+	text-align: center;
+	border: 2px solid steelblue;
+	border-radius: 10px; 
+	background-color: white;
+}
+#test_toggle {
+	height: 200px;
+	display: block;
+}
+#ninja_pic1 {
+	width: 60px;
+	margin: 0px 0px 0px 0px;
+}
+#test_slideUp_butt {
+	display: inline-block;
+}
+#test_slideDown_butt {
+	display: inline-block;
+}
+#test_slideUp_slideDown {
+	height: 200px;
+	display: block;
+}
+#ninja_pic2 {
+	width: 60px;
+	margin: 0px 0px 0px 0px;
+}
+#test_slideToggle {
+	height: 200px;
+	display: block;
+}
+#ninja_pic3 {
+	width: 60px;
+	margin: 0px 0px 0px 0px;
+}
+#test_fadeOut_fadeIn {
+	height: 200px;
+	display: block;
+}
+#test_fadeIn_butt {
+	display: inline-block;
+}
+#test_fadeOut_butt {
+	display: inline-block;
+}
+#ninja_pic4 {
+	width: 60px;
+	margin: 0px 0px 0px 0px;
+}
+#before_after_sample {
+	margin: 10px 0px;
+}
+#before_after_text {
+	margin-top: 20px;
+}
+.append {
+	margin: 10px 0px;
+}

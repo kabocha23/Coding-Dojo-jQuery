@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0; 
+}
+
+body {
+	width: 1000px;
+}
+
+#ninja_set1 {
+	width: 100%;
+	margin-left: 100px;
+	display: block;
+}
+#ninja_pic11 {
+	width: 150px;
+}
+#ninja_pic12 {
+	width: 150px;
+}
+#ninja_pic13 {
+	width: 150px;	
+}
+#ninja_pic14 {
+	width: 150px;	
+}
+
+#ninja_set2 {
+	width: 100%;
+	margin-left: 100px;
+	display: block;
+}
+#ninja_pic21 {
+	width: 150px;	
+	display: inline-block;
+}
+#ninja_pic22 {
+	width: 150px;
+	display: inline-block;
+}
+#ninja_pic23 {
+	width: 150px;
+	display: inline-block;
+}
+#ninja_pic24 {
+	width: 150px;
+	display: inline-block;	
+}
+
+#restore_all_butt {
+	width: 300px;
+	height: 150px;
+	margin: 20px 0px 0px 250px;
+	font-family: Comic Sans MS;
+	font-size: 300%;
+	font-weight: bold;
+	background-color: steelblue;
+	display: block;
+}

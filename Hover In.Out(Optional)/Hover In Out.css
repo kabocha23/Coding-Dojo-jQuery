@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: steelblue;
+}
+img {
+	margin: 5px 20px;
+	width: 160px;
+	background-color: lightgrey;
+	border-radius: 10px;
+	display: inline-block;
+
+}
+#pic_set1 {
+	width: 100%;
+	display: block;
+}
+#pic_set2 {
+	width: 100%;
+	display: block;
+}

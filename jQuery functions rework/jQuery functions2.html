@@ -1,0 +1,219 @@
+<!-- Study only these tags!
+Effects (functions to do some cool animation effects)
+.hide() 	.show() 	.toggle() 	.slideDown() 	.slideToggle()
+.slideUp() 	.fadeOut() 	.fadeIn()
+CSS (adding or removing a class for any HTML element/DOM)
+.addClass() 	.removeClass() 	.css()
+Manipulation (retrieving or setting value or text in any HTML element)
+.after() 	.append() 	.prepend() 	.attr() 	
+.before() 	.html() 	.text() 	.val()
+Events (functions to handle an event)
+.click() 	.on() 	.live() - deprecated (JQuery 1.7) 	.hover()
+
+TEST THE FOLLOWING FUNCTIONS:
+.click 		.hide 		.show 		.toggle 	.slideDown 	.slideUp	.slideToggle 	.fadeIn 	.fadeOut 	.addClass 	.before 	.after 		.append 	.html 	
+.attr 		.val 		.text 		.data
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>jQuery Functions Assignment</title>
+		<link rel="stylesheet" type="text/css" href="JQuery functions.css">
+		<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+		<script type="text/javascript" src="jQueryfunctions2.js">
+		// $(document).ready(function() {
+
+		// 		$("#test_click_butt").click(function() {
+		// 			alert("The .click function works!");
+		// 			});
+
+		// 		$("#test_hide_butt").click(function() {
+		// 			$("#test_hide").hide(function() {
+		// 			});
+		// 		});
+		// 		$("#test_show_butt").click(function() {
+		// 			$("#test_hide").show(function() {
+		// 			});
+		// 		});
+
+		// 		$("#test_toggle_butt").click(function() {
+		// 			$("#ninja_pic1").toggle("slow", function() {
+		// 			});
+		// 		});
+
+		// 		$("#test_slideUp_butt").click(function() {
+		// 			$("#ninja_pic2").slideUp("slow", function() {
+		// 		  });
+		// 		});
+		// 		$("#test_slideDown_butt").click(function() {
+		// 			$("#ninja_pic2").slideDown("slow", function() {
+		// 		  });
+		// 		});
+
+		// 		$("#test_slideToggle_butt").click(function() {
+		// 			$("#ninja_pic3").slideToggle("slow", function() {
+		// 		  });
+		// 		});
+
+		// 		$("#test_fadeIn_butt").click(function() {
+		// 		 	$("#ninja_pic4").fadeIn( "slow", function() {
+		// 		  });
+		// 		});
+		// 		$("#test_fadeOut_butt").click(function() {
+		// 		 	$("#ninja_pic4").fadeOut( "slow", function() {
+		// 		  });
+		// 		});
+
+		// 		$("#test_before_butt").click(function() {
+		// 		 	$("#before_after_sample").before("<p>Added a 'p' element in front</p>");
+		// 		});
+		// 		$("#test_after_butt").click(function() {
+		// 		 	$("#before_after_sample").after("<p>Added a 'p' element after</p>");
+		// 		});
+
+		// 		$("#test_append_butt").click(function() {
+		// 			$(".append").append("<p>the more you click the more you append</p>");
+		// 		});
+
+		// 		$("#test_html_butt").click(function)() {
+		// 			$("#html").html( "text" );
+		// 		});
+
+		// 		$("#test_val_butt").click(function() {
+	 //    			var value = $("#test_val_input").val();
+ 	// 			});
+
+		// 		$("#test_attr_butt").click(function() {
+		// 			$("#test_attr_butt").attr();
+		// 		});
+		// 	});
+		</script>
+
+	</head>
+	<body>
+		<h1 id="header">jQuery Functions Assignment</h1>
+		<div id="main_content_container">
+			<div id="test_list">
+				<h3>Testing functions:</h3>
+				<ul>
+					<li>.click</li> 		
+					<li>.hide</li> 		
+					<li>.show</li> 		
+					<li>.toggle</li> 	
+					<li>.slideDown</li>  	
+					<li>.slideUp</li> 	
+					<li>.slideToggle</li>  	
+					<li>.fadeIn</li>  	
+					<li>.fadeOut</li>  	
+					<li>.addClass</li>  	
+					<li>.before</li>  	
+					<li>.after</li>  		
+					<li>.append</li>  	
+					<li>.html</li> 	
+					<li>.attr</li>  		
+					<li>.val</li>  		
+					<li>.text</li>  		
+					<li>.data</li>
+				</ul>
+			</div>
+			<div id="test_buttons_container">
+				<div id="test_click" class="test_click_container">
+					<h2>.click</h2>
+					<input id="test_click_butt" type="button" name="test_click" value="Click to Test">
+					<p>Clicking this button will pop up an alert</p>
+				</div>
+
+				<div id="test_hide" class="test_click_container">
+					<h2>.hide</h2>
+					<input id="test_hide_butt" type="button" name="test_hide" value="Click to Test">
+					<p>Clicking this button will hide this box</p>			
+				</div>
+
+				<div id="test_show" class="test_click_container">
+					<h2>.show</h2>
+					<input id="test_show_butt" type="button" name="test_show" value="Click to Test">
+					<p>Clicking this button will show the .hide box</p>	
+				</div>
+
+				<div id="test_toggle" class="test_click_container">
+					<h2 id="toggle_head">.toggle</h2>
+					<input id="test_toggle_butt" type="button" name="test_toggle" value="Click to Test">
+					<p>Clicking this button will make the ninja disaapear and reappear</p>
+					<img id="ninja_pic1" src="ninja.png" alt="ninja_png">
+				</div>
+
+				<div id="test_slideUp_slideDown" class="test_click_container">
+					<h2>.slideUp and .slideDown</h2>
+					<input id="test_slideUp_butt" type="button" name=".slideUp_and_slideDown" value="Click to .slideUp">
+					<input id="test_slideDown_butt" type="button" name=".slideUp_and_slideDown" value="Click to .slideDown">
+					<p>Click the .slideUp button to slide the ninja up, and the .slideDown button to slide him back down</p>
+					<img id="ninja_pic2" src="ninja.png" alt="ninja2_png">
+				</div>
+
+				<div id="test_slideToggle" class="test_click_container">
+					<h2>.slideToggle</h2>
+					<input id="test_slideToggle_butt" type="button" name="test_slideToggle" value="Click to Test">
+					<p>Clicking this button will toggle the slide, accomplishing the same as above</p>
+					<img id="ninja_pic3" src="ninja.png" alt="ninja3_png">
+				</div>
+
+				<div id="test_fadeOut_fadeIn" class="test_click_container">
+					<h2>.fadeOut & .fadeIn</h2>
+					<input id="test_fadeOut_butt" type="button" name="test_fadeOut" value="Click to .fadeOut">
+					<input id="test_fadeIn_butt" type="button" name="test_fadeIn" value="Click to .fadeIn">	
+					<p>Click the .fadeOut button to fade the ninja out, and the .fadeIn button to fade him back in</p>	
+					<img id="ninja_pic4" src="ninja.png" alt="ninja4_png">
+				</div>
+
+				<div id="test_addClass" class="test_click_container">
+					<h2>.addClass</h2>
+					<input id="test_addClass_butt" type="button" name="test_addClass" value="Click to Test">			
+				</div>
+
+				<div id="test_before_and_after" class="test_click_container">
+					<h2>.before & .after</h2>
+					<input id="test_before_butt" type="button" name="test_before" value=".before">
+					<input id="test_after_butt" type="button" name="test_after" value=".after">	
+					<p id="before_after_sample">TEST</p>
+					<p id="before_after_text">Click the .before button to add text before, and the .after button to add text after</p>		
+				</div>
+
+				<div id="test_append" class="test_click_container">
+					<h2>.append</h2>
+					<input id="test_append_butt" type="button" name="test_append" value=".append">
+					<p>Click the append button to append a message to the end of 'TEST'</p>
+					<p class="append">TEST</p>				
+				</div>
+
+				<div id="test_html" class="test_click_container">
+					<h2>.html</h2>
+					<input id="test_html_butt" type="button" name="test_html" value="Click to test">
+					<p id="html">Get HTML</p>			
+				</div>
+
+				<div id="test_attr" class="test_click_container">
+					<h2>.attr</h2>
+					<input id="test_attr_butt" type="button" name="test_attr" value="See Attribute">			
+				</div>
+
+				<div id="test_val" class="test_click_container">
+					<h2>.val</h2>
+					<input id="test_val_input" type="text" value="">	
+					<input id="test_val_butt" type="button" value="TEST">
+				</div>
+
+				<div id="test_text" class="test_click_container">
+					<h2>.text</h2>
+					<input id="test_text_butt" type="button" name="test_text" value="Click to Test">			
+				</div>
+
+				<div id="test_data" class="test_click_container">
+					<h2>.data</h2>
+					<input id="test_data_butt" type="button" name="test_data" value="Click to Test">			
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>

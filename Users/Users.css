@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 1000px;
+	font-family: Arial;
+	color: white;
+	background: steelblue;
+}
+table {
+	margin: 50px;
+}
+table, th, td {
+	border: 1px solid white;
+}
+#form_1 {
+	margin: 0px 0px 0px 200px;
+}
+input {
+	display: block;
+}

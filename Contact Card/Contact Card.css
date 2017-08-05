@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 1000px;
+	background-color: steelblue;
+}
+#form_1 {
+	width: 40%;
+	margin: 30px 0px 0px 30px;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 20px;
+	display: inline-block;
+}
+#description {
+	width: 300px;
+	height: 200px;
+	text-align: top;
+}
+.inputs {
+	margin: 0px 0px 10px 0px; 
+	display: block;
+}
+#click {
+	height: 50px; 
+	width: 100px;	
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 10px;
+}
+#cards_container {
+	width: 45%;
+	margin-left: 100px;
+	font-family: Arial;
+	text-align: center; 
+	vertical-align: top;
+	display: inline-block;
+}
+.value1 {
+	width: 300px;
+	height: 160px;
+	margin: 30px 0px 0px 70px;
+	border: 2px solid green;
+	text-align: center; 
+	vertical-align: top;
+	background-color: lightgrey; 
+}
+.switchback {
+	display: none;
+}
+#description {
+	display: block;
+}
